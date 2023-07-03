@@ -1,1 +1,19 @@
-/*  your css code here. If applicable */
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.imagecontainer{
+    display: flex;
+    width: 100%;
+    gap: 14px;
+}
+.img1,.img2,.img3,.img4,.img5{
+    width: 15%;
+}
+.buttoncontainer{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
