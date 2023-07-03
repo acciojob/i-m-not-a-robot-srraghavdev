@@ -66,8 +66,8 @@ function checker(event){
 let tempert=document.getElementById(event.target.id)
 tempert.style.border="solid 10px lightblue"    
 console.log(event)
-if(container.length>1 && document.getElementById("verify") !== undefined){
-    let ver= document.getElementById("verify")
+if(container.length>1 && document.getElementById("btn") !== undefined){
+    let ver= document.getElementById("btn")
     ver.remove()
 }
 if(container.length===0){
@@ -83,7 +83,7 @@ else if(container.length===1){
     container.push(event.target.className)
     let verify = document.createElement("button")
     verify.innerText="VERIFY"
-    verify.id="verify"
+    verify.id="btn"
     verify.onclick= fncheck
     let df = document.getElementsByClassName("buttoncontainer")[0]
     df.append(verify)
@@ -99,7 +99,7 @@ if(container[0]===container[1]){
 else{
     p.innerText="We can't verify you as a human. You selected the non-identical tiles."
 }
-let verify=document.getElementById("verify")
+let verify=document.getElementById("btn")
 let message=document.getElementsByClassName("message")[0]
 message.append(p)
 verify.remove()
